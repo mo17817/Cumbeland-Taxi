@@ -1,10 +1,11 @@
-
 const routes = [
   {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/Index.vue') }
+      { path: '', component: () => import('pages/Index.vue') },
+      { path: 'services', component: () => import('pages/services.vue') },
+      {path: 'Form', componet: () => import('pages/Form.vue') },
     ]
   },
 
@@ -17,3 +18,4 @@ const routes = [
 ]
 
 export default routes
+
