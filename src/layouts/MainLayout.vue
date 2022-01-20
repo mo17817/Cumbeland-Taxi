@@ -6,7 +6,7 @@
         <router-view />
       </q-page>
     </q-page-container>
-    <q-footer>
+    <!-- <q-footer>
       <q-toolbar class="bg-black">
         <q-toolbar-title
           class="text-center text-italic text-subtitle2 text-weight-heavy"
@@ -15,7 +15,7 @@
           mo.codes207@gmail.com
         </q-toolbar-title>
       </q-toolbar>
-    </q-footer>
+    </q-footer> -->
   </q-layout>
 </template>
 <script>

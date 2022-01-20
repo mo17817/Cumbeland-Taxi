@@ -11,11 +11,28 @@
   </head>
   <q-separator color="secondary" size="8px" />
   <div class="q-pa-sm bg-primary">
-    <div class="col q-pa-xs text-black" align="center" size = "50px">
-      <h1 id = "call" >Give us a call! 207-808-9792</h1>
-    </div>
-  
-
+    <!-- first horizontal card -->
+  <div class="q-pb-lg row items-start q-gutter-md bg-primary text-black">
+    <q-card class="my-card bg-primary" flat bordered id = "second-para">
+      <q-card-section horizontal>
+        <q-card-section>
+          <div class = "col" align = "left">
+            <h2> Give us a Call Today ! </h2>
+             <q-separator class = "bg-secondary" color="primary" size="6px" />
+              <h4> We offer the best and most reliable rides and bookings in all of Portland, Come experience the Cumberland Taxi way of transportation! </h4>
+            </div>
+        </q-card-section>
+      <div class = "col-5">
+        <q-img
+          src="~assets/toyota.jpg"
+          height = "497px"
+        />
+      </div>
+      <q-separator color="secondary" size="8px" />
+      </q-card-section>
+    </q-card>
+  </div>
+<!-- end -->
     <div id="carousel-container">
       <div class="col" id="text-container"></div>
 

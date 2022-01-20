@@ -8,19 +8,22 @@
   <q-header elavated>
           <div class="text-black text-center" align = "center" id="title">
                 Cumberland Taxi Cab 
+                <lb />
         <div class="col-3 text-black" align="right">
+          
+        <q-seperator color = "primary" />
         <q-toolbar id = "navbar">
         <q-breadcrumbs class = "text-black" active-color="secondary" style="font-size: 30">
           <q-breadcrumbs-el class = "text-black text-weight-light" icon = "home" label = "Available from 9am to 12pm" type = "button"/>
             <q-breadcrumbs-el class = "text-black text-weight-light" icon = "phone" label = "call today"/>
-            <q-btn href = "pages/Form.vue" link = "pages/Form.vue" />
-            <q-breadcrumbs-el  class = "text-black text-weight-light text-left"  icon = "car" label = "Book a Ride!" />
+            <q-breadcrumbs-el  class = "text-black text-weight-light text-left"  icon = "local_taxi" label = "Book a Ride!" />
         </q-breadcrumbs>
       </q-toolbar>
         </div>
     </div>
   </q-header>
-    </div>
+</div>
+<!-- <q-separator class = "bg-secondary" color="black" size="8px" /> -->
 </template>
 
 <style lang="css" scoped>
