@@ -9,10 +9,10 @@
       rel="stylesheet"
     />
   </head>
-  <q-separator color="secondary" size="8px" />
-  <div class="q-pa-sm bg-primary">
+  <q-separator color="secondary" size="4px" />
+  <div class="q-pa-sm bg-primary" id ="first-container">
     <!-- first horizontal card -->
-  <div class="q-pb-lg row items-start q-gutter-md bg-primary text-black">
+  <div class="q-pb-lg row items-start bg-primary text-black">
     <q-card class="my-card bg-primary" flat bordered id = "second-para">
       <q-card-section horizontal>
         <q-card-section>
@@ -22,12 +22,10 @@
               <h4> We offer the best and most reliable rides and bookings in all of Portland, Come experience the Cumberland Taxi way of transportation! </h4>
             </div>
         </q-card-section>
-      <div class = "col-5">
         <q-img
           src="~assets/toyota.jpg"
           height = "497px"
         />
-      </div>
       <q-separator color="secondary" size="8px" />
       </q-card-section>
     </q-card>
@@ -95,8 +93,8 @@
             </q-card-section>
           </q-card-section>
         </q-card>
-      </div>
       <Form></Form>
+      </div>
       <!--page scroller-->
       <q-page-scroller
         position="bottom-right"
@@ -187,6 +185,23 @@ export default {
 @media screen and (max-width: 400px) {
   #review-header {
     font-size: x-large;
+    direction: flex;
+  };
+  #second-para{ 
+    font-size: x-small;
+    direction: flex;
+  }
+  #first-container{
+    font-size: x-small;
+    width: auto; 
+    margin: auto; 
+    direction: flex;
+  }
+  #first-para{
+    font-size: small;
+    margin: auto;
+    width: auto;
+    direction: flex;
   }
 }
 </style>

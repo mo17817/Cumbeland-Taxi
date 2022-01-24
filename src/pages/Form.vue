@@ -6,10 +6,12 @@
 <script>
 import { defineComponent } from '@vue/composition-api';
 import components from 'vue'
-import { Form } from "components/Form.vue";
+import Form  from "components/Form.vue";
 
 export default defineComponent({
+    components: { Form },
     setup() {
-    },components: { Form },
+    },
 })
 </script>
+

@@ -7,11 +7,11 @@
   <div class= "q-pa-xxs">
   <q-header elavated>
           <div class="text-black text-center" align = "center" id="title">
-                Cumberland Taxi Cab 
+               <u> Cumberland Taxi Cab </u>
                 <lb />
         <div class="col-3 text-black" align="right">
           
-        <q-seperator color = "primary" />
+        <q-seperator color = "primary" size = "5px"/>
         <q-toolbar id = "navbar">
         <q-breadcrumbs class = "text-black" active-color="secondary" style="font-size: 30">
           <q-breadcrumbs-el class = "text-black text-weight-light" icon = "home" label = "Available from 9am to 12pm" type = "button"/>
