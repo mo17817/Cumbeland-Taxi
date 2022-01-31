@@ -1,30 +1,31 @@
 <template>
   <head>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Raleway"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
-      rel="stylesheet"
-    />
+     <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Satisfy&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/> 
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet"/>
+
   </head>
   <q-separator color="secondary" size="4px" />
   <div class="q-pa-sm bg-primary" id ="first-container">
+    <Parallax></Parallax>
     <!-- first horizontal card -->
   <div class="q-pb-lg row items-start bg-primary text-black">
     <q-card class="my-card bg-primary" flat bordered id = "second-para">
-      <q-card-section horizontal>
+      <q-card-section horizontal bordered>
         <q-card-section>
           <div class = "col" align = "left">
             <h2> Give us a Call Today ! </h2>
              <q-separator class = "bg-secondary" color="primary" size="6px" />
-              <h4> We offer the best and most reliable rides and bookings in all of Portland, Come experience the Cumberland Taxi way of transportation! </h4>
+              <h4> We offer the best and most reliable rides and bookings in all of Portland. Snow, skeet or rain Cumberland Taxi is the ride for you come experience the Cumberland Taxi way of transportation! Call <u>207-808-9792</u> </h4>
             </div>
         </q-card-section>
         <q-img
-          src="~assets/toyota.jpg"
+          src="~assets/winter-pic.jpeg"
           height = "497px"
+          id = "img"
         />
       <q-separator color="secondary" size="8px" />
       </q-card-section>
@@ -66,8 +67,24 @@
                       align="center"
                     >
                       {{ object.hours }}
+                    
                     </h6>
                   </q-btn>
+                  <div 
+                  align = "center"
+                  class = "q-pa-md text-black"
+                  id = "first-para"
+                  >
+                  <q-btn 
+                    to = "src/pages/form"
+                    rounded
+                    shadow
+                    class = "q-pa-md"
+                    >
+                    <h6> 
+                      <u> click here to book an appointment today !</u> </h6>
+                  </q-btn>
+                  </div>
                 </div>
                 <q-dialog>
                   <q-btn rounded>
@@ -117,9 +134,10 @@ import { ref } from "vue";
 import Carousel from "src/components/Carousel.vue";
 import Carousel3 from "components/Carousel3.vue";
 import Form from "components/Form.vue";
+import Parallax from 'components/Parallax.vue';
 
 export default {
-  components: { Carousel, Form },
+  components: { Carousel, Form, Parallax, },
   setup() {
     return {
       slide: ref(1),
@@ -146,7 +164,7 @@ export default {
 </script>
 <style>
 #call{
-  font-family: "Lobster";
+  font-family: 'Exo 2', sans-serif;
   font-size: 55px;
 }
 #title {
@@ -162,14 +180,18 @@ export default {
   /* font-weight: initial; */
 }
 #first-para {
-  font-family: "Raleway";
+  font-family: 'Exo 2', sans-serif;
 }
 #second-para {
-  font-family: "Raleway";
+  font-family: 'Exo 2', sans-serif;
   font-size: 15px;
+  display: wrap;
+  flex-wrap: wrap;
 }
 #second-card {
   margin: 7px;
+  display: wrap;
+  flex-wrap: wrap;
 }
 #header {
   position: relative;
@@ -182,6 +204,7 @@ export default {
   size: 45px;
   color: "yellow";
 }
+
 @media screen and (max-width: 400px) {
   #review-header {
     font-size: x-large;
@@ -202,6 +225,12 @@ export default {
     margin: auto;
     width: auto;
     direction: flex;
+  }
+  #img{
+    display: wrap;
+    flex-wrap: wrap;
+    size: small;
+    justify-content: space-evenly;
   }
 }
 </style>
