@@ -56,11 +56,12 @@
                 <h2 class="text-black" align="center" id="first-para">
                   {{ object.title }}
                 </h2>
-                <div align="center">
+                <div align="center" id = "btn-container">>
                   <q-btn align="center" 
                   rounded 
                   shadow
-                  @click="object.Form">
+                  @click="object.Form"
+                  id = "a-btn">
                     <h6
                       class="text-black text-weight-bold"
                       id="first-para"
@@ -73,15 +74,15 @@
                   <div 
                   align = "center"
                   class = "q-pa-md text-black"
-                  id = "first-para"
                   >
                   <q-btn 
                     to = "src/pages/form"
                     rounded
                     shadow
                     class = "q-pa-md"
+                    id = "a-btn"
                     >
-                    <h6> 
+                    <h6 id="first-para" class="text-black text-weight-bold"> 
                       <u> click here to book an appointment today !</u> </h6>
                   </q-btn>
                   </div>
@@ -110,7 +111,7 @@
             </q-card-section>
           </q-card-section>
         </q-card>
-      <Form></Form>
+        <Form> </Form>
       </div>
       <!--page scroller-->
       <q-page-scroller
@@ -204,6 +205,15 @@ export default {
   size: 45px;
   color: "yellow";
 }
+#btn-container{
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Exo 2', sans-serif;
+}
+#a-btn:hover{
+    color: #a9e8e2;
+    background: #a9e8e2;
+}
 
 @media screen and (max-width: 400px) {
   #review-header {
@@ -231,6 +241,10 @@ export default {
     flex-wrap: wrap;
     size: small;
     justify-content: space-evenly;
+  }
+  #btn-container{
+    size: xx-small;
+    font-size: xx-small;
   }
 }
 </style>
