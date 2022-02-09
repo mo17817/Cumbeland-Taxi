@@ -10,12 +10,15 @@
         <img src="~assets/portland_streets3.jpeg" size = "250px">
       </template>
 
-      <h1 class="bg-transparent text-primary"><i>Cumberland Taxi</i></h1>
+      <h2 class="bg-transparent text-primary"><i>Cumberland Taxi</i></h2>
     </q-parallax>
   </div>
 </template>
 <style scoped>
 #parallax{
     font-family: 'Exo 2', sans-serif;
+    display: wrap;
+    flex-wrap: auto;
+
 }
 </style>
