@@ -3,8 +3,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Satisfy&display=swap" rel="stylesheet"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet"/>
   </head>
   <div class= "q-pa-xxs">
@@ -13,7 +13,7 @@
                <u id ="cumberland"> Cumberland Taxi Cab </u>
                 <lb />
         <div class="col-5 text-black" align="center">
-          
+
         <q-seperator color = "primary" size = "5px"/>
         <q-toolbar id = "navbar">
         <q-breadcrumbs class = "text-black" active-color="secondary" style="font-size: 30px" id = "title" align = "center">
@@ -29,7 +29,6 @@
 <!-- <q-separator class = "bg-secondary" color="black" size="8px" /> -->
 </template>
 <script>
-import { defineComponent } from '@vue/composition-api'
 export default defineComponent({
   setup() {
   },
@@ -42,7 +41,7 @@ export default defineComponent({
   font-family: 'Exo 2', sans-serif;
 }
 #navbar{
-  display: inline-block; 
+  display: inline-block;
   padding: 0%;
   margin: 0%;
 }

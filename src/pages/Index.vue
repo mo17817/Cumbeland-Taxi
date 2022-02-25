@@ -3,8 +3,8 @@
      <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Satisfy&display=swap" rel="stylesheet"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet"/>
 
   </head>
@@ -57,8 +57,8 @@
                   {{ object.title }}
                 </h2>
                 <div align="center" id = "btn-container">>
-                  <q-btn align="center" 
-                  rounded 
+                  <q-btn align="center"
+                  rounded
                   shadow
                   @click="object.Form"
                   id = "a-btn">
@@ -68,21 +68,21 @@
                       align="center"
                     >
                       {{ object.hours }}
-                    
+
                     </h6>
                   </q-btn>
-                  <div 
+                  <div
                   align = "center"
                   class = "q-pa-md text-black"
                   >
-                  <q-btn 
+                  <q-btn
                     to = "src/pages/form"
                     rounded
                     shadow
                     class = "q-pa-md"
                     id = "a-btn"
                     >
-                    <h6 id="first-para" class="text-black text-weight-bold"> 
+                    <h6 id="first-para" class="text-black text-weight-bold">
                       <u> click here to book an appointment today !</u> </h6>
                   </q-btn>
                   </div>
@@ -220,14 +220,14 @@ export default {
     font-size: x-large;
     direction: flex;
   };
-  #second-para{ 
+  #second-para{
     font-size: x-small;
     direction: flex;
   }
   #first-container{
     font-size: x-small;
-    width: auto; 
-    margin: auto; 
+    width: auto;
+    margin: auto;
     direction: flex;
   }
   #first-para{
